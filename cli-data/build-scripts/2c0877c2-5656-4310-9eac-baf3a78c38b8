@@ -13,4 +13,4 @@ docker-compose run --rm web bash -c '
   rm -rf tmp/latest.dump
   bundle exec rails spree_sample:load
 ' &&
-docker-compose up`
+docker-compose up
