@@ -2,5 +2,5 @@ cd $SPREE_CLI_PROJECT_NAME
 cd $SPREE_CLI_PATH_INTEGRATION
 cp packages/spree/.env.template site/.env.local
 yarn install
-npm run dev
-npm run dev
+for i in `seq 1 50`; do yarn dev; done
+# This is workaround since next is not working properly
