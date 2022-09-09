@@ -9,7 +9,7 @@ docker-compose run --rm web bash -c '
   bundle exec rails db:drop &&
   bundle exec rails db:create &&
   bundle exec rails db:migrate &&
-  bundle exec rails db:seed &&
+  echo -en "spree@example.com" | bundle exec rails db:seed &&
   rm -rf tmp/latest.dump
   bundle exec rails spree_sample:load
 ' | awk -v prefix="[backend]" '{ print prefix, $0 }' &&
