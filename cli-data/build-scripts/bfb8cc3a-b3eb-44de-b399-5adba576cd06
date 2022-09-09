@@ -2,11 +2,11 @@ cd $SPREE_CLI_PROJECT_NAME
 cd $SPREE_CLI_PATH_BACKEND
 rm -rf .env && cp -f .env.sample .env
 gem install bundler --conservative
-bundle check
-bundle install
-yarn install
-bin/rails db:prepare
-bin/rails log:clear tmp:clear
-bin/rails restart
-bundle exec rails spree_sample:load
-bin/dev
+bundle check | awk -v prefix="[backend]" '{ print prefix, $0 }'
+bundle install | awk -v prefix="[backend]" '{ print prefix, $0 }'
+yarn install | awk -v prefix="[backend]" '{ print prefix, $0 }'
+bin/rails db:prepare | awk -v prefix="[backend]" '{ print prefix, $0 }'
+bin/rails log:clear tmp:clear | awk -v prefix="[backend]" '{ print prefix, $0 }'
+bin/rails restart | awk -v prefix="[backend]" '{ print prefix, $0 }'
+bundle exec rails spree_sample:load | awk -v prefix="[backend]" '{ print prefix, $0 }'
+bin/dev | awk -v prefix="[backend]" '{ print prefix, $0 }'
