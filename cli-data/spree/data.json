@@ -29,7 +29,7 @@
     "documentationURL": "https://dev-docs.spreecommerce.org/",
     "buildScriptPath": "/build-scripts/263d6436-6db5-4fab-a973-70ba7ae3c5d0",
     "dependencies": {
-      "ruby": ">= 3.0"
+      "ruby": "= 3.0.3"
     }
   },
   {
@@ -40,7 +40,7 @@
     "documentationURL": "https://dev-docs.spreecommerce.org/",
     "buildScriptPath": "/build-scripts/bfb8cc3a-b3eb-44de-b399-5adba576cd06",
     "dependencies": {
-      "ruby": ">= 3.0"
+      "ruby": "= 3.0.3"
     }
   }
 ]
