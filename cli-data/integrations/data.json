@@ -6,7 +6,7 @@
     "documentationURL": "https://docs.vuestorefront.io/spree",
     "buildScriptPath": "/build-scripts/ceef98f2-fdc1-476d-8e7f-6368f10c707e",
     "dependencies": {
-      "node": ">= 14.15"
+      "node": ">= 14.15 <= 14.19"
     }
   },
   {
