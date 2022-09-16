@@ -1,0 +1,4 @@
+cd $SPREE_CLI_PROJECT_NAME
+cd $SPREE_CLI_PATH_INTEGRATION
+for i in `seq 1 50`; do yarn dev | awk -v prefix="[frontend]" '{ print prefix, $0 }'; done
+# This is workaround since next is not working properly
