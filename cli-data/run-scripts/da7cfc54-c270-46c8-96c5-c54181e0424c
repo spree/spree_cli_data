@@ -1,0 +1,5 @@
+cd $SPREE_CLI_PROJECT_NAME
+cd $SPREE_CLI_PATH_BACKEND
+docker-compose up redis postgres | awk -v prefix="[backend]" '{ print prefix, $0 }' &
+(while [ "`docker inspect -f {{.State.Running}} spree_starter-main_postgres_1`" != "true" ]; do     sleep 2; done &&
+bin/rails s)
