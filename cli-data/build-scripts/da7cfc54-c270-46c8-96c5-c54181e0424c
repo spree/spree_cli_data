@@ -13,6 +13,6 @@ docker-compose run --rm web bash -c '
   rm -rf tmp/latest.dump
 ' | awk -v prefix="[backend]" '{ print prefix, $0 }'
 docker-compose up redis postgres | awk -v prefix="[backend]" '{ print prefix, $0 }' &
-(while [ "`docker inspect -f {{.State.Running}} spree_starter-main_postgres_1`" != "true" ]; do     sleep 2; done &&
+(while [ "`docker inspect -f {{.State.Running}} backend_postgres_1`" != "true" ]; do     sleep 2; done &&
 bin/rails s)
 
