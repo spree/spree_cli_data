@@ -14,5 +14,6 @@ docker-compose run --rm web bash -c '
 ' | awk -v prefix="[backend]" '{ print prefix, $0 }'
 docker-compose up redis postgres | awk -v prefix="[backend]" '{ print prefix, $0 }' &
 (while [ "`docker inspect -f {{.State.Running}} backend_postgres_1`" != "true" ]; do     sleep 2; done &&
-bin/rails s)
-
+yarn install &&
+yarn build &&
+bin/rails s) | awk -v prefix="[backend]" '{ print prefix, $0 }'
