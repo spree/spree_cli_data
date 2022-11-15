@@ -7,7 +7,8 @@
     "buildScriptPath": "/build-scripts/ceef98f2-fdc1-476d-8e7f-6368f10c707e",
     "runScriptPath": "/run-scripts/ceef98f2-fdc1-476d-8e7f-6368f10c707e",
     "dependencies": {
-      "node": ">= 14.15 <= 14.19"
+      "node": ">= 14.15 <= 14.19",
+      "yarn": "> 0"
     }
   },
   {
@@ -18,7 +19,8 @@
     "buildScriptPath": "/build-scripts/76352e58-4a43-4af1-8f3e-88e90a79f6f1",
     "runScriptPath": "/run-scripts/76352e58-4a43-4af1-8f3e-88e90a79f6f1",
     "dependencies": {
-      "node": ">= 13.0"
+      "node": ">= 13.0",
+      "yarn": "> 0"
     }
   }
 ]
