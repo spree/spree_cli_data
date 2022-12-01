@@ -13,7 +13,7 @@ docker-compose run --rm web bash -c '
   rm -rf tmp/latest.dump
 ' | awk -v prefix="[backend]" '{ print prefix, $0 }'
 docker-compose up redis postgres | awk -v prefix="[backend]" '{ print prefix, $0 }' &
-(while [ "`docker inspect -f {{.State.Running}} backend-postgres-1`" != "true" ]; do     sleep 2; done &&
+(while [ "`docker inspect -f {{.State.Running}} backend_postgres_1`" != "true" ]; do     sleep 2; done &&
 yarn install &&
 yarn build &&
 bin/rails s) | awk -v prefix="[backend]" '{ print prefix, $0 }'
