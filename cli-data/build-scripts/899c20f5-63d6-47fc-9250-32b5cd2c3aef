@@ -14,7 +14,12 @@ docker-compose run --rm web bash -c '
 ' | awk -v prefix="[backend]" '{ print prefix, $0 }' &&
 docker-compose run web rake spree_sample:load | awk -v prefix="[backend]" '{ print prefix, $0 }'
 docker-compose up redis postgres | awk -v prefix="[backend]" '{ print prefix, $0 }' &
-(while [ "`docker inspect -f {{.State.Running}} backend_postgres_1`" != "true" ]; do     sleep 2; done &&
-yarn install &&
-yarn build &&
-bin/rails s) | awk -v prefix="[backend]" '{ print prefix, $0 }'
+(
+  while
+    [ "`docker inspect -f {{.State.Running}} backend_postgres_1`" != "true" ] &&
+    [ "`docker inspect -f {{.State.Running}} backend-postgres-1`" != "true" ];
+  do sleep 2; done &&
+  yarn install &&
+  yarn build &&
+  bin/rails s
+) | awk -v prefix="[backend]" '{ print prefix, $0 }'
