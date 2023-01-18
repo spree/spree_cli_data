@@ -24,7 +24,7 @@
     "buildScriptPath": "/build-scripts/263d6436-6db5-4fab-a973-70ba7ae3c5d0",
     "runScriptPath": "/run-scripts/263d6436-6db5-4fab-a973-70ba7ae3c5d0",
     "dependencies": {
-      "ruby": "= 3.0.3",
+      "ruby": "= 3.2.0",
       "vips": ">= 8.6",
       "gpg": "> 0",
       "psql": "> 0",
@@ -45,7 +45,7 @@
     "dependencies": {
       "docker": ">= 20.0",
       "docker-compose": "> 0",
-      "ruby": "= 3.0.3"
+      "ruby": "= 3.2.0"
     },
     "samples": {
       "buildScriptPath": "/build-scripts/899c20f5-63d6-47fc-9250-32b5cd2c3aef"
