@@ -1,3 +1,4 @@
 cd $SPREE_CLI_PROJECT_NAME
 cd $SPREE_CLI_PATH_BACKEND
-docker-compose up | awk -v prefix="[backend]" '{ print prefix, $0 }'
+
+bin/start-docker | awk -v prefix="[backend]" '{ print prefix, $0 }'
