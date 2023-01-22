@@ -7,6 +7,7 @@
     "documentationURL": "https://dev-docs.spreecommerce.org/",
     "buildScriptPath": "/build-scripts/c56e18ec-e14d-4fd9-a9a2-fb1dc4f436e5",
     "runScriptPath": "/run-scripts/c56e18ec-e14d-4fd9-a9a2-fb1dc4f436e5",
+    "recommendedForPlatforms": ["linux", "win32"],
     "dependencies": {
       "docker": ">= 20.0",
       "docker-compose": "> 0"
@@ -42,6 +43,7 @@
     "documentationURL": "https://dev-docs.spreecommerce.org/",
     "buildScriptPath": "/build-scripts/da7cfc54-c270-46c8-96c5-c54181e0424c",
     "runScriptPath": "/run-scripts/da7cfc54-c270-46c8-96c5-c54181e0424c",
+    "recommendedForPlatforms": ["darwin"],
     "dependencies": {
       "docker": ">= 20.0",
       "docker-compose": "> 0",
