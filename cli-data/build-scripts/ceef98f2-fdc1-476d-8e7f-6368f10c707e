@@ -1,6 +1,5 @@
 cd $SPREE_CLI_PROJECT_NAME
 cd $SPREE_CLI_PATH_INTEGRATION
-yarn install | awk -v prefix="[frontend]" '{ print prefix, $0 }'
 export BACKEND_URL=$SPREE_CLI_BACKEND_URL
-yarn build | awk -v prefix="[frontend]" '{ print prefix, $0 }'
-yarn dev | awk -v prefix="[frontend]" '{ print prefix, $0 }'
+
+bin/setup | awk -v prefix="[frontend]" '{ print prefix, $0 }'
