@@ -10,7 +10,7 @@
     "recommendedForPlatforms": ["linux", "win32"],
     "dependencies": {
       "docker": ">= 20.0",
-      "docker-compose": "> 0"
+      "docker-compose": ">= 2.0"
     },
     "samples": {
       "buildScriptPath": "/build-scripts/2c0877c2-5656-4310-9eac-baf3a78c38b8"
@@ -46,7 +46,7 @@
     "recommendedForPlatforms": ["darwin"],
     "dependencies": {
       "docker": ">= 20.0",
-      "docker-compose": "> 0",
+      "docker-compose": ">= 2.0",
       "ruby": "= 3.2.0"
     },
     "samples": {
@@ -65,7 +65,7 @@
     "beta": true,
     "dependencies": {
       "docker": ">= 20.0",
-      "docker-compose": "> 0"
+      "docker-compose": ">= 2.0"
     },
     "samples": {
       "buildScriptPath": "/build-scripts/2c0877c2-5656-4310-9eac-baf3a78c38b8"
