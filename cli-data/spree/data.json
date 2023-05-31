@@ -1,8 +1,63 @@
 [
   {
     "id": "c56e18ec-e14d-4fd9-a9a2-fb1dc4f436e5",
+    "name": "Spree 4.6 (dockerized)",
+    "version": "docker",
+    "gitRepositoryURL": "https://github.com/spree/spree_starter",
+    "documentationURL": "https://dev-docs.spreecommerce.org/",
+    "buildScriptPath": "/build-scripts/c56e18ec-e14d-4fd9-a9a2-fb1dc4f436e5",
+    "runScriptPath": "/run-scripts/c56e18ec-e14d-4fd9-a9a2-fb1dc4f436e5",
+    "recommendedForPlatforms": ["linux", "win32"],
+    "dependencies": {
+      "docker": ">= 20.0",
+      "docker-compose": ">= 2.0"
+    },
+    "samples": {
+      "buildScriptPath": "/build-scripts/2c0877c2-5656-4310-9eac-baf3a78c38b8"
+    }
+  },
+  {
+    "id": "263d6436-6db5-4fab-a973-70ba7ae3c5d0",
+    "name": "Spree 4.6 (no docker)",
+    "version": "no-docker",
+    "gitRepositoryURL": "https://github.com/spree/spree_starter",
+    "documentationURL": "https://dev-docs.spreecommerce.org/",
+    "buildScriptPath": "/build-scripts/263d6436-6db5-4fab-a973-70ba7ae3c5d0",
+    "runScriptPath": "/run-scripts/263d6436-6db5-4fab-a973-70ba7ae3c5d0",
+    "dependencies": {
+      "ruby": "= 3.2.0",
+      "vips": ">= 8.6",
+      "gpg": "> 0",
+      "psql": "> 0",
+      "redis": "> 0"
+    },
+    "samples": {
+      "buildScriptPath": "/build-scripts/bfb8cc3a-b3eb-44de-b399-5adba576cd06"
+    }
+  },
+  {
+    "id": "da7cfc54-c270-46c8-96c5-c54181e0424c",
+    "name": "Spree 4.6 (hybrid)",
+    "version": "hybrid",
+    "gitRepositoryURL": "https://github.com/spree/spree_starter",
+    "documentationURL": "https://dev-docs.spreecommerce.org/",
+    "buildScriptPath": "/build-scripts/da7cfc54-c270-46c8-96c5-c54181e0424c",
+    "runScriptPath": "/run-scripts/da7cfc54-c270-46c8-96c5-c54181e0424c",
+    "recommendedForPlatforms": ["darwin"],
+    "dependencies": {
+      "docker": ">= 20.0",
+      "docker-compose": ">= 2.0",
+      "ruby": "= 3.2.0"
+    },
+    "samples": {
+      "buildScriptPath": "/build-scripts/899c20f5-63d6-47fc-9250-32b5cd2c3aef"
+    }
+  },
+  {
+    "id": "c56e18ec-e14d-4fd9-a9a2-fb1dc4f436e5",
     "name": "Spree 4.5 (dockerized)",
     "version": "docker",
+    "gitRef": "spree-4-5-stable",
     "gitRepositoryURL": "https://github.com/spree/spree_starter",
     "documentationURL": "https://dev-docs.spreecommerce.org/",
     "buildScriptPath": "/build-scripts/c56e18ec-e14d-4fd9-a9a2-fb1dc4f436e5",
@@ -20,6 +75,7 @@
     "id": "263d6436-6db5-4fab-a973-70ba7ae3c5d0",
     "name": "Spree 4.5 (no docker)",
     "version": "no-docker",
+    "gitRef": "spree-4-5-stable",
     "gitRepositoryURL": "https://github.com/spree/spree_starter",
     "documentationURL": "https://dev-docs.spreecommerce.org/",
     "buildScriptPath": "/build-scripts/263d6436-6db5-4fab-a973-70ba7ae3c5d0",
@@ -39,6 +95,7 @@
     "id": "da7cfc54-c270-46c8-96c5-c54181e0424c",
     "name": "Spree 4.5 (hybrid)",
     "version": "hybrid",
+    "gitRef": "spree-4-5-stable",
     "gitRepositoryURL": "https://github.com/spree/spree_starter",
     "documentationURL": "https://dev-docs.spreecommerce.org/",
     "buildScriptPath": "/build-scripts/da7cfc54-c270-46c8-96c5-c54181e0424c",
@@ -55,9 +112,9 @@
   },
   {
     "id": "c56e18ec-e14d-4fd9-a9a2-fb1dc4f436e5",
-    "name": "Spree 4.6 beta (dockerized)",
+    "name": "Spree 4.7 beta (dockerized)",
     "version": "docker",
-    "gitRef": "spree-4-6-development",
+    "gitRef": "spree-4-7-development",
     "gitRepositoryURL": "https://github.com/spree/spree_starter",
     "documentationURL": "https://dev-docs.spreecommerce.org/",
     "buildScriptPath": "/build-scripts/c56e18ec-e14d-4fd9-a9a2-fb1dc4f436e5",
