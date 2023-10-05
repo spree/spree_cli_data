@@ -14,7 +14,7 @@
   {
     "id": "76352e58-4a43-4af1-8f3e-88e90a79f6f1",
     "name": "Next.js Commerce",
-    "gitRepositoryURL": "https://github.com/vercel/commerce",
+    "gitRepositoryURL": "https://github.com/spree/nextjs-commerce",
     "documentationURL": "https://user-docs.spreecommerce.org",
     "buildScriptPath": "/build-scripts/76352e58-4a43-4af1-8f3e-88e90a79f6f1",
     "runScriptPath": "/run-scripts/76352e58-4a43-4af1-8f3e-88e90a79f6f1",
